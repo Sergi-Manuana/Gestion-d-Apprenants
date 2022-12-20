@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>GestionApprennant</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h2>Gestion d'Aprrenants</h2>
+        </div>
+            
+        <div class="form">
+            <form id="form" action="" >
+
+                <div class="form-control"> 
+                    <label for="newname">Nom</label>
+                    <input type="text" name="newname" id="newname" required="required" placeholder="Entre Votre Nom" >
+                    
+                </div>
+                <div class="form-control"> 
+                    <label for="newlastname">Postnom</label>
+                    <input type="text" name="newlastname" id="newlastname"  placeholder="Entre Votre Postnom" required>
+                    
+                </div>
+                <div class="form-control" > 
+                    <label for="newfirstname" class="form-label">Prenom</label>
+                    <input type="text" name="newfirstname" id="newfirstname"  placeholder="Entre votre Prénom" required>
+                    
+                </div>
+                <div class="form-control">
+                    <label for="">Pays</label>
+                    <select name="pays" id="newcountry" required>
+                        <option selected>Choississez un pays sur la liste</option>
+                        <option value="1">Congo DRC</option>
+                        <option value="2">Congo Brazza</option>
+                        <option value="3">Cameroun</option>
+                        <option value="4">Cap-vert</option>
+                        <option value="5">Ghana</option>
+                        <option value="6">Mali</option>
+                        <option value="7">Maroc</option>
+                        <option value="8">Nigeria</option>
+                        <option value="9">Senegal</option>
+                        <option value="10">Tunisie</option>
+                    </select>
+                    
+                    
+                </div>
+                <div class="form-control">
+                    <label for="gender">Genre</label>
+                    <select name="gender" id="gender" required>
+                        <option selected>Selectionne ton sexe</option>
+                        <option value="1">Masculin</option>
+                        <option value="2">Féminin</option>
+                  </select>
+                  
+                </div>
+                <div class="form-control">
+                    <label for="newgit" >GitHub</label>
+                    <input type="text" name="newgit" id="newgit" required>
+                    
+                </div>
+                
+                <button id="btnsubmit" type="submit" class=>Ajouter</button>
+
+            </form>
+
+        </div>
+        
+        <div class="header">
+            <h2>Liste des Apprennants</h2>
+
+        </div>
+        
+        <div class="tableau">
+
+            <table >
+                <thead>
+                    <tr>
+                        <thead id="thead-header">
+                            <th >Nom</th>
+                            <th >PostNom</th>
+                            <th >Prenom</th>
+                            <th >Pays</th>
+                            <th >Genre</th>
+                            <th >GitHub</th>
+                            <th >Actions</th>
+                        </thead>    
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        
+        <footer>
+            <p>© Travail réalisé dans le cadre de mon apprentissage en HTML, CSS et JavaScript avec Letecode.com</p>
+        </footer>
+        
+   
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

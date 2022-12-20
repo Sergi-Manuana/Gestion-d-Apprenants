@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Serif', serif;
+
+}
+:root{
+    --color-first:#1ec36dd9;
+    --color-second:#f0f0f0;
+    --color-error:#e74c3c;
+    --color-success:#2ecc71;
+    
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:url(image_bg.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    
+}
+.form-control input:focus,
+.form-control select:focus{
+    outline:var(--color-first);
+    border: 2px solid var(--color-first);
+    
+}
+
+.tableau{
+    font-size: 14px;
+    margin: 0 20px;
+    border-collapse: collapse;
+}
+
+table{
+    position: relative;
+    border-collapse: collapse;
+    border: 1px solid  #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2),-1px -1px 8px rgba(0, 0, 0, 0.2)
+}
+
+thead{
+    background-color:var(--color-first);
+    color: #f7f7f7;
+}
+th{
+    border: 1px solid #ccc;
+    text-align: center;
+    justify-content: space-between;
+    padding: 12px;
+    word-break: keep-all;
+    width: 100%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2)
+}
+
+
+.container{
+    background: #fff;
+    border-radius: 5px;
+    width: 800px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    
+}
+
+.header{
+    background: #f7f7f7;
+    border-bottom: 1px solid var(--color-second);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.header h2{
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    
+}
+
+.tableau{
+    margin-top: 30px;
+}
+
+form{
+    padding: 30px 40px;
+}
+
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-control.success input{
+    border-color: var(--color-success);
+}
+.form-control.error input{
+    border-color: var(--color-error);
+}
+
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    font-size: 14px;
+}
+
+
+.form-control.error small{
+    color: var(--color-error);
+    visibility: visible;
+}
+
+.form-control input , .form-control select{
+    border: 2px solid var(--color-second) ;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    padding-left :10px ;
+}
+
+form button{
+    background-color: var(--color-first);
+    border: 2px solid var(--color-first);
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;    
+}
+
+
+footer{
+    margin-top: 40px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+
